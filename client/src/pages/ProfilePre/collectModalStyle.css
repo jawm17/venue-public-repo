@@ -1,0 +1,90 @@
+#collectOuter {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#collectArea {
+    width: 320px;
+    max-width: 100vw;
+    height: 450px;
+    border-radius: 12px;
+    background-color: var(--grayMain);
+    border: solid 1px var(--green);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;   
+}
+
+#collectInner {
+    padding: 5%;
+    padding-top: 7%;
+    width: 100%;
+}
+
+#collectTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#collectProfilePic {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: solid 1px var(--green);
+    object-fit: cover;
+}
+
+#collectTitle {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#collectInfo {
+    width: calc(100% - 10%);
+    height: 175px;
+    border-radius: 4px;
+    background-color: var(--graySecond);
+    margin-top: 15px;
+}
+
+#collectInfoInner {
+    padding-top: 5px;
+    padding: 8px;
+}
+
+#collectInfoTitle {
+    font-size: 15px;
+}
+
+.collectBenefit {
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#collectConfirm {
+    width: 90%;
+    height: 34px;
+    background-color: var(--green);
+    border-radius: 6px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 11;
+    font-size: 12px;;
+
+}

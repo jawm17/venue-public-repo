@@ -1,0 +1,77 @@
+#profileMenuBody {
+    left: 0px;
+    top: auto;
+    bottom: 0px;
+    transform: none;
+    width: calc(100vw - 40px);
+    /* height: 340px; */
+    position: fixed;
+    z-index: 10000;
+    background-color: var(--grayMain);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 20px;
+}
+
+#closeModal {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 10;
+    color: white;
+    display: none;
+}
+
+#profileMenuUserInfo {
+    display: flex;
+    align-items: center;
+}
+
+#profileMenuImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: gray;
+}
+
+#profileUserNameBalance {
+    margin-left: 15px;
+}
+
+#profileMenuName {
+    color: white;
+    font-family: "font-2535";
+    color: var(--green);
+}
+
+#profileMenuBalance {
+    color: white;
+}
+
+#mProfileMenuBtnArea {
+    margin-top: 20px;
+}
+
+.mProfileMenuBtn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--grayThird);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.mProfileMenuIcon {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}

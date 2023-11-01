@@ -1,0 +1,82 @@
+#paywallModalBG {
+    width: 100vw;
+    height: 100vh;
+    /* backdrop-filter: blur(5px); */
+    top: 0px;
+    position: fixed;
+    z-index: 50000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paywallModalBody {
+    width: 85vw;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: var(--grayMain);
+    /* border: solid 1px var(--green); */
+    padding: 25px;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+#paywallModalTitle {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#paywallModalImg {
+    width: 100%;
+    object-fit: cover;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#paywallModalText {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#checkWalletNFTBtn {
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 4px;
+    margin-top: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+#addFundsLink {
+    color: var(--green);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    #paywallModalBody {
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+        transform: none;
+        width: calc(100vw - 50px);
+        /* height: 380px; */
+        background-color: var(--grayMain);
+        border-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+}

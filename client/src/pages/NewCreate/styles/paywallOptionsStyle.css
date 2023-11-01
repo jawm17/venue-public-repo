@@ -1,0 +1,80 @@
+#paywallOptionsArea {
+    padding: 20px;
+    padding-top: 10px;
+}
+
+#paywallAmountLabel {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#pawyallChainLabel {
+
+}
+
+#amountInputFlex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#amountInputArea {
+    width: calc(100% - 20px);
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px gray;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amountCurrency {
+    margin-right: 15px;
+    font-size: 14px;
+    color: var(--green);
+    font-family: "font-2535";
+}
+
+.chainBtn {
+    /* border: solid 1px #363A3C; */
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #363A3C;
+
+    width: 100px;
+    height: 34px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#ethChainImg {
+    width: 20px;
+    margin-right: 5px;
+    margin-left: -10px;
+}
+
+#polygonChainImg {
+    width: 20px;
+    margin-right: 5px;
+    margin-left: -10px;
+}
+
+#mainnetChainBtn {
+    border: solid 1px #004181;
+    color: #00c3ff;
+    background-color: #004181;
+}
+
+#polygonChainBtn {
+    border: solid 1px rgb(127, 0, 144);
+    color: rgb(255, 161, 252);
+    background-color: rgb(127, 0, 144);
+    /* rgb(196, 0, 192); */
+}

@@ -1,0 +1,265 @@
+#cancelSpace {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#buyCardOuter {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10005;
+    top: 0px;
+    left: 0px;
+    /* backdrop-filter: blur(5px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    backdrop-filter: blur(5px);
+}
+
+#buyCard {
+    width: 450px;
+    padding: 25px;
+    max-width: 100vw;
+
+    border-radius: 12px;
+    background-color: var(--grayMain);
+    /* background-color: var(--graySecond); */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+    transition: all 0.2s ease-in;
+    overflow: scroll;
+    max-height: 100vh;
+}
+
+#closeCards {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#buyCardTitle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#etherealCardSub {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#learnMoreCards {
+    background-color: transparent;
+    color: var(--green);
+    cursor: pointer;
+}
+
+#cardOptionArea {
+    margin-top: 25px;
+}
+
+.cardOption {
+    border: solid 1px transparent;
+    width: calc(100% - 2px);
+    height: 55px;
+    border-radius: 8px;
+    background-color: var(--graySecond);
+    /* background-color: var(--grayMain); */
+    margin-bottom: 7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#selectedCard {
+    border: solid 1px var(--green);
+}
+
+.cardImage {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.cardTitle {
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.cardAmount {
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+    background-color: rgba(0, 255, 0, 0.38);
+    color: rgb(0, 252, 0);
+    width: 55px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amounts {
+    margin-top: 15px;
+}
+
+.amountRow {
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.amountLine {
+    width: calc(100% - 10px);
+    border-bottom: solid 0.1px gray;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#checkoutBtn {
+    width: 100%;
+    height: 34px;
+    background-color: var(--green);
+    border-radius: 4px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 11;
+    font-size: 12px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+#cardCheckoutPreview {
+    margin-top: 10px;
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/618/465/small/holographic-background-iridescent-foil-glitch-hologram-pastel-neon-rainbow-ultraviolet-metallic-paper-template-for-presentation-cover-to-web-design-abstract-colorful-gradient-free-vector.jpg");
+}
+
+#ethCardLabel {
+    margin-left: 20px;
+    font-family: "font-2535";
+    color: black;
+}
+
+.paperElement {
+    width: calc(100% - 50px);
+    margin-top: 20px;
+    position: absolute;
+    background-color: var(--grayMain);
+    bottom: 25px;
+    left: 25px;
+}
+
+#errorDisplayCheckout {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.81);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#checkoutErrorMsg {
+    width: 70%;
+    line-height: 1.5;
+}
+
+#checkoutMain {
+    min-height: 450px;
+}
+
+#checkoutMainMini {
+    min-height: 400px;  
+}
+
+#checkoutSuccess {
+    min-height: 200px;  
+}
+
+#paperLoaderFlex {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 0;
+}
+
+#paperLoader {
+    margin-bottom: 0px;
+    border: 2px solid var(--grayMain);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.5s linear infinite;
+}
+
+#paperSuccessLoaderFlex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin-top: 40px;
+}
+
+#paperSuccessIcon {
+    width: 44px;
+    height: 44px;
+    color: var(--green);
+}
+
+#paperSuccessText {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 515px) {
+    #buyCardOuter {
+        backdrop-filter: blur(5px);
+    }
+    #buyCard {
+        width: calc(100vw - 50px);
+        position: fixed;
+        bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-bottom: 20px;
+    }
+}

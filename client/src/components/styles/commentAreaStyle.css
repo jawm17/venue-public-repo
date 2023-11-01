@@ -1,0 +1,37 @@
+
+/* #commentArea {
+    width: 60vw;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#commentTop {
+    position: absolute;
+    height: 340px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#commentBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+}
+
+#postComment {
+    cursor: pointer;
+    color: white;
+}
+
+.comment {
+    height: 40px
+} */

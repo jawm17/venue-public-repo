@@ -1,0 +1,66 @@
+#leaderboard {
+    max-width: var(--maxWidthMain);
+    width: 90vw;
+    margin: auto;
+}
+
+#leaderboardArea {
+    color: white;
+    margin-top: 150px;
+    width: 100%;
+    /* border: solid 1px red; */
+}
+
+#leaderboardTitle {
+        font-family: "font-2535";
+        text-align: center;
+        margin-bottom: 55px;
+        font-size: 25px;
+}
+
+#leaderboardLabel {
+    font-size: 18px;
+}
+
+/* Leader Row ============================================== */
+
+.leaderRow {
+    width: 100%;
+    height: 64px;
+    border-radius: 3.2px;
+    border: 0.8px solid #1B1F21;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--graySecond);
+    position: relative;
+}
+
+.leaderRow:hover {
+    border-color:#5e5e5e;
+    cursor: pointer;
+}
+
+.leaderPosition {
+    margin-left: 20px;
+}
+
+.leaderPic {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.leaderName {
+    margin-left: 10px;
+}
+
+.leaderAmount {
+    position: absolute;
+    right: 20px;
+    font-family: "font-2535";
+    color: var(--green);
+    font-size: 14px;
+}

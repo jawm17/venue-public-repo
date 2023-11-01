@@ -1,0 +1,311 @@
+#profile {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#profileHeroArea {
+    width: 100vw;
+    height: 180px;
+    background-color: gray;
+    position: relative;
+    margin-top: 72px;
+}
+
+#profileHeroMain {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: gray;
+}
+
+#profileImgBorder {
+    position: absolute;
+    bottom: -40px;
+    left: 7%;
+    /* left: calc(50% - 75px); */
+    width: 120px;
+    height: 120px;
+    border-radius: 6.4px;
+    background-color: #1B1F21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileImgMain {
+    width: 104px;
+    height: 104px;
+    border-radius: 6.4px;
+    object-fit: cover;
+    border-radius: 6.4px;
+    background-color: gray;
+}
+
+/* Profile Info Area =======================================*/
+#profileInfoFlex {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 160px;
+}
+
+#profileInfoArea {
+    width: 85%;
+    position: relative;
+}
+
+#profileRow1 {
+    margin-top: 53.6px;
+    display: flex;
+    align-items: center;
+}
+
+#followSendRow {
+    display: flex;
+    margin-left: 28px;
+    /* margin-left: 0px;
+    margin-top: 20px; */
+}
+
+#profileUsername {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25.6px;
+    display: inline;
+    /* min-width: 220px; */
+}
+
+.followBtn {
+    width: 108px;
+    height: 32px;
+
+    border: solid 0.8px var(--green);
+    border-radius: 3.2px;
+    background-color: var(--green);
+
+    font-size: 11.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#unfollow {
+    border: solid 0.8px #363A3C;
+    background-color: #363A3C;
+    color: white;
+}
+
+#profileSendBtn {
+    width: 32px;
+    height: 32px;
+
+    border: solid 0.8px  #363A3C;
+    border-radius: 3.2px;
+    background-color:  #363A3C;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 12px;
+}
+
+#profileSendBtn:active {
+    border-color: var(--green);
+}
+
+#profileBio {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.4px;
+    margin-top: 20px;
+    max-width: 448px;
+}
+
+#profileStatsFlex {
+    width: 320px;
+    position: absolute;
+    right: 0px;
+    top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileStat {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.8px;
+    width: 96px;
+    height: 32px;
+    border-radius: 6.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profile Tabs ===========================================*/
+#profileTabsFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+#profileTabs {
+    width: 85%;
+    border-bottom: solid 0.8px #5e5e5e;
+    position: relative;
+}
+
+#profileTabs::-webkit-scrollbar {
+    display: none;
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#profileTabBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 176px;
+    position: absolute;
+    bottom: 0px;
+    left: calc(4vw);
+}
+
+#profileContentFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#profileContent {
+    width: 85%;
+    position: relative;
+    display: grid;
+    column-gap: calc((85vw - 1216px) / 3);
+    grid-template-columns: auto auto auto auto;
+}
+
+/* .contentGridBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1440px) {
+    #profileContent {
+        column-gap: calc((85vw - 912px) / 2);
+        grid-template-columns: auto auto auto;
+    }
+} 
+
+@media only screen and (max-width: 1080px) {
+    #profileContent {
+        grid-template-columns: auto auto;
+    }
+}  */
+
+@media only screen and (max-width: 720px) {
+    #profileContent {
+        display: initial;
+    }
+    .contentGridBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+/* Responsive follow and send buttons */
+#followSendFlex2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 17.6px;
+    display: none;
+}
+
+#followSendArea2 {
+    width: 288px;
+    height: 32px;
+    display: flex;
+    position: relative;
+}
+
+.followBtn2 {
+    width: 108px;
+    height: 32px;
+
+    border: solid 0.8px var(--green);
+    border-radius: 3.2px;
+    background-color: var(--green);
+
+    font-size: 11.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    width: calc(100% - 40px);
+}
+
+@media only screen and (max-width: 920px) {
+    #profileInfoFlex {
+        height: 208px;
+    }
+    #profileInfoArea {
+        text-align: center;
+    }
+    #profileStatsFlex {
+        position: initial;      
+        margin-top: 32px;
+    }
+    #profileStatsOuter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #profileImgBorder {
+        left: calc(50% - 60px);
+    }
+    #followSendRow {
+        display: none;
+    }
+    #profileRow1 {
+        margin-top: 52px;
+        display: flex;
+        justify-content: center;
+    }
+    #profileBio {
+        max-width: none;
+    }
+    #profileStatsFlex {
+        width: 288px;
+    }
+    #followSendFlex2 {
+        display: flex;
+    }
+    #profileTabsFlex {
+        justify-content: space-around;
+    }
+    #profileTabBtns {
+        justify-content: space-around;
+    }
+    #profileTabBtns {
+        left: 0px;
+        width: 100%;
+        /* min-width: 400px; */
+        position: relative;
+    }
+} 
+
+
+

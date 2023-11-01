@@ -1,0 +1,233 @@
+:root {
+    --menuWidth: -381px;
+}
+
+#headerMenuBg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    backdrop-filter: blur(5px);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    transition: all 0.4s ease-out;
+}
+
+#closeMenuBtn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10%;
+    top: 30px;
+    cursor: pointer;
+
+    color: white;
+}
+
+#headerWallet {
+    width: 100%;
+    height: 120px;
+    background-color: #2b3136;
+    margin-bottom: 16px;
+    border-radius: 3.2px;
+    position: relative;
+}
+
+#walletWithdraw {
+    position: absolute;
+    bottom: 8px;
+    width: 95%;
+    left: 2.5%;
+    border-radius: 2px;
+    height: 32px;
+    background-color: var(--green);
+}
+
+#headerMenu {
+    transition: all 0.2s ease-out;
+    width: 380px;
+    height: 100vh;
+    position: fixed;
+    right: -381px;
+    top: 0px;
+    background-color: var(--graySecond);
+    z-index: 10;
+    /* border-left: solid 0.8px #5e5e5e; */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#menuUserInfo {
+    position: absolute;
+    /* background-color: red; */
+    right:40px;
+    height: 82px;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    display: flex;
+    /* background-color: red; */
+    /* display: none; */
+}
+
+#menuBarImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#menuName {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    font-family: "font-2535";
+    color: var(--green);
+}
+
+#menuAddress {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+#menuFlex {
+    margin-top: 72px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    width: 80%;
+    height: 70%;
+    margin-top: 16px;
+    overflow: scroll;
+}
+
+.menuOption {
+    width: 100%;
+    height: 40px;
+    border-radius: 3.2px;
+    background-color: #2b3136;
+    cursor: pointer;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+#createMenuBtn {
+    background-image: url("https://img.freepik.com/free-vector/rainbow-gradient-banner-design_1048-15767.jpg");
+    background-size: 150%;
+    background-position-x: 380px;
+    background-position-y: 90px;
+    transition: all 0.5s ease-in-out;
+}
+
+#createMenuBtn:hover {
+    background-image: url("https://img.freepik.com/free-vector/rainbow-gradient-banner-design_1048-15767.jpg");
+    background-size: 150%;
+    background-position-x: 320px;
+    background-position-y: 90px;
+}
+
+.menuOption:hover {
+    background-color: #2b3136;
+}
+
+.menuOptionIcon {
+    margin-left: 8px;
+    width: 19.2px;
+    height: 19.2px;
+}
+
+.menuOptionLabel {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11.2px;
+    color: white;
+    margin-left: 12px;
+}
+
+#searchMenuOption {
+    display: none;
+}
+
+#menuStats {
+    width: calc(100% - 2px);
+    height: 200px;
+    border-radius: 3.2px;
+    border: solid 1px #2b3136;
+    margin-bottom: 16px;
+}
+
+#notifCount {
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 650px) {
+    #menu {
+        width: calc(100% - 36px);
+        height: 70%;
+        margin-top: 16px;
+        overflow: scroll;
+    }
+
+    #closeMenuBtn {
+        left: 24px;
+    }
+
+    #menuFlex {
+    /* margin-top: 0px; */
+}
+
+    #menuUserInfo {
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    #headerMenu {
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #headerMenuBg {
+        backdrop-filter: none;
+    }
+
+    :root {
+        --menuWidth: -100vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #headerMenu {
+        transition: all 0.2s ease-out;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        right: -1000vw;
+        background-color: #1B1F21;
+        z-index: 10;
+        border-left: solid 0.8px #5e5e5e;
+    }
+}

@@ -1,0 +1,84 @@
+#newTest {
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    overflow: scroll;
+    /* background-image: url("https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1185382671?k=20&m=1185382671&s=612x612&w=0&h=QvHSiV0uDYhl69m1rpIt0aYbk4vmpl9kjVcfkMkgyfw=");
+    background-size: cover; */
+}
+
+#newHeader {
+    width: 100vw;
+    height: 72px;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
+
+#newConnectBtn {
+    width: 100px;
+    height: 40px;
+    background-color: #0B83FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+#newConnectBtn:hover {
+    width: 110px;
+    height: 43px;
+    right: 15px;
+    
+}
+
+#newHero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+#heroArea {
+    width: 100%;
+}
+
+#heroText {
+    font-size: 40px;
+    margin-left: 10%;
+    font-weight: bold;
+    margin-top: -85px;
+}
+
+#subHeroText {
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+#boxes {
+    position: absolute;
+    bottom: 40px;
+    left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 360px;
+    height: 200px;
+    margin-right: 40px;
+    background-color: gray;
+    border-radius: 13px;
+}

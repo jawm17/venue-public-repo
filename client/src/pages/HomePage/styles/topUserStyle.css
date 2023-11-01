@@ -1,0 +1,161 @@
+@keyframes moveTicker {
+    0% {
+        transform: translateX(0);
+    }
+
+    /* 50% { transform: translateX(-100%); } */
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+#topUsersTitle {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    /* margin-top: 140px; */
+    margin-top: 110px;
+    margin-left: 2.5%;
+    /* display: none; */
+}
+
+#topUserFlex {
+    /* margin-left: 5%; */
+    /* background-color: var(--graySecond); */
+    /* padding: 10px; */
+}
+
+#topUsersRow {
+    /* width: 95vw; */
+    overflow: scroll;
+    white-space: nowrap;
+    min-height: 40px;
+    margin-top: 16px;
+    color: white;
+    /* animation: moveTicker 30s linear infinite; */
+}
+
+.firstTopUserDiv {
+    width: 240px;
+    height: 50px;
+    background-color: var(--graySecond);
+    border: solid 1.6px transparent;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 16px;
+    margin-left: 2.5%;
+    font-size: 12.8px;
+}
+
+.firstTopUserDiv:hover {
+    border-color: var(--green);
+}
+
+.topUserDiv {
+    width: 240px;
+    height: 50px;
+    background-color: var(--graySecond);
+    border: solid 1.6px transparent;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 16px;
+    font-size: 12.8px;
+}
+
+.topUserFlex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topUserRank {
+    color: white;
+    margin-left: 12px;
+}
+
+.topUserDiv:hover {
+    border-color: var(--green);
+}
+
+.topUserInfo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.topUserPic {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 8px;
+    object-fit: cover;
+}
+
+.topUserName {
+    color: white;
+}
+
+.topUserAmount {
+    color: var(--green);
+    font-family: "font-2535";
+    /* background: -webkit-linear-gradient(0deg, rgba(123,255,53,1) 0%, rgba(234,55,255,1) 36%, rgba(0,255,203,1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+@media only screen and (max-width: 864px) {
+    #topUsersTitle {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #topUserFlex {
+        width: 100vw;
+        background-color: transparent;
+        padding: 10px;
+    }
+
+    #topUsersTitle {
+       display: flex;
+       margin-top: 90px;
+       margin-left: 0px;
+    }
+
+    #topUsersRow{
+        animation: none;
+        margin-top: 20px;
+        position: relative;
+        width: calc(94%);
+    }
+
+    .firstTopUserDiv {
+        height: 50px;
+        width: calc(100% - 3.2px);
+        display: block;
+        margin: 0px;
+        background-color: var(--graySecond);
+    }
+
+    .topUserDiv {
+        height: 50px;
+        width: calc(100% - 3.2px);
+        display: block;
+        margin: 0px;
+        margin-top: 10px;
+        background-color: var(--graySecond);
+    }
+
+    .topUserDiv:nth-child(n+4) {
+        display: none;
+      }
+
+    #smallCutOff {
+        display: none;
+    }
+}

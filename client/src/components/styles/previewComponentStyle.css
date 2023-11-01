@@ -1,0 +1,223 @@
+/* .resultGridBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.firstPreviewOuter {
+    padding-left: 2.5%;
+    display: inline-block;
+    scroll-snap-align: start;
+    width: 320px;
+    height: 225px;
+}
+
+.previewOuter {
+    padding-left: 16px;
+    display: inline-block;
+    scroll-snap-align: start;
+    width: 320px;
+    height: 225px;
+}
+
+.topPreviewComponent {
+    width: 100%;
+    height: calc(100%);
+    padding: 1px;
+    border-radius: 6px;
+    border: solid 2px var(--graySecond);
+    background-color: var(--graySecond);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in;
+
+    overflow: hidden;
+}
+
+/* .topPreviewComponent:hover {
+    border-color: var(--green);
+} */
+
+.previewImgDiv {
+    width: calc(100% - 4px);
+    margin-left: 2px;
+    margin-top: 2px;
+    height: 160px;
+    background-color: gray;
+    border-radius: 4.8px;
+    border-bottom-right-radius: 4.8px;
+    border-bottom-left-radius: 4.8px;
+    position: relative;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4.8px;
+    border-bottom-right-radius: 4.8px;
+    border-bottom-left-radius: 4.8px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.previewPriceTag {
+    position: absolute;
+    background-color: rgb(0, 94, 0);
+    color: rgb(0, 252, 0);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    right: 5px;
+    bottom: 5px;
+    min-width: 36px;
+    height: 16px;
+    padding: 4px;
+}
+
+.previewInfo {
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.previewInfoLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previewUser {
+    display: flex;
+    align-items: center;
+}
+
+.previewUserPic {
+    width: 22px;
+    height: 22px;
+    border: solid 1.6px var(--green);
+    background-color: gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.previewUserName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    margin-left: 6.4px;
+}
+
+.previewTitle {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.previewInfoRight {
+    margin-top: 8px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previewViews {
+    width: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    background-color: var(--graySecond);
+    justify-content: right;
+    position: absolute;
+    right: 0px;
+    padding-right: 8px;
+}
+
+.previewTime {
+    color: gray;
+    font-size: 13px;
+    background-color: var(--graySecond);
+}
+
+.fadeElement {
+    position: absolute;
+    left: -40px;
+    background-color: transparent;
+    width: 40px;
+    height: 20px;
+    background-image: linear-gradient(to right, rgba(243, 244, 245, 0), #1b1f21f0, #1b1f21);
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .firstPreviewOuter {
+        display: initial;
+        padding-left: 0;
+    }
+    .previewOuter {
+        display: initial;
+        /* padding-left: 0; */
+    }
+    .topPreviewComponent {
+        /* height: 250px; */
+        /* width: calc(100% - 6px); */
+    }
+    .previewImgDiv {
+        /* height: 180px; */
+    }
+}
+
+/* .topPreviewTitle {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 11.2px;
+    margin: 6.4px;
+    margin-top: 8px;
+    margin-left: 9.6px;
+}
+
+.previewUser {
+    display: flex;
+    align-items: center;
+    margin-left: 9.6px;
+}
+
+.previewUserPic {
+    width: 17.6px;
+    height: 17.6px;
+    border: solid 1.6px var(--green);
+    background-color: gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.previewUserName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 9.6px;
+    margin-left: 6.4px;
+}
+
+.topPreviewViews {
+    position: absolute;
+    right: 8px;
+    bottom: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.topPreviewSOL {
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+    color: var(--green);
+    font-size: 13px;
+} */

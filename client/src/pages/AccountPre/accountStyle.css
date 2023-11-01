@@ -1,0 +1,165 @@
+/* Main account styles in profile styles */
+
+#editHeroBtn {
+    position: absolute;
+    bottom: 4px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 3.2px;
+    background-color: var(--green);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editProfilePic {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 3.2px;
+    background-color: var(--green);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#accountTabsFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+#accountTabs {
+    width: 85%;
+    border-bottom: solid 0.8px #5e5e5e;
+    position: relative;
+}
+
+#accountTabs::-webkit-scrollbar {
+    display: none;
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#accountTabBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.accountTab {
+    color: rgb(155, 155, 155);
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 1.6px transparent;
+    cursor: pointer;
+    padding-bottom: 9.6px;
+    font-size: 12.8px;
+}
+
+.selectedAccountTab {
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 1.6px var(--green);
+    padding-bottom: 9.6px;
+    color: var(--green);
+    cursor: pointer;
+    font-size: 12.8px;
+}
+
+#accountCreateBtn {
+    width: 108px;
+    height: 32px;
+    position: absolute;
+    right: 40px;
+    bottom: -128px;
+    border: solid 0.8px #363A3C;
+    cursor: pointer;
+    border-radius: 3.2px;
+    background-color: #363A3C;
+    z-index: 100;
+
+    display: none;
+}
+
+.verticalDiv {
+    border-left: solid 1px rgb(155, 155, 155);
+    height: 32px;
+}
+
+#accountContent {
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.previewDiv {
+    color: white;
+    width: 160px;
+    height: 120px;
+    background-color: #363A3C;
+    border-radius: 4.8px;
+    cursor: pointer;
+}
+
+#activityFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#activityArea {
+    width: calc(85vw - 0px);
+    position: relative;
+}
+
+/* @media only screen and (max-width: 1440px) {
+    #accountContent {
+        column-gap: calc((85vw - 912px) / 2);
+        grid-template-columns: auto auto auto;
+    }
+} 
+
+@media only screen and (max-width: 1080px) {
+    #accountContent {
+        grid-template-columns: auto auto;
+    }
+}  */
+
+@media only screen and (max-width: 720px) {
+    #accountContent {
+        display: initial;
+    }
+    .contentGridBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+@media only screen and (max-width: 1149px) {
+    #accountTabsFlex {
+        justify-content: space-around;
+    }
+    #accountTabBtns {
+        justify-content: space-around;
+    }
+    #accountTabs {
+        overflow: scroll;
+    }
+    #accountTabBtns {
+        left: 0px;
+        width: 100%;
+        min-width: 500px;
+        position: relative;
+    } 
+} 

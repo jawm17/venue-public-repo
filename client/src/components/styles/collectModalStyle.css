@@ -1,0 +1,154 @@
+#collectModalOuter {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    /* background-color: rgba(0, 0, 0, 0.431); */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    top: 0px;
+}
+
+#collectModalBody {
+    width: 550px;
+    /* height: 350px; */
+    border-radius: 12px;
+    background-color: var(--grayMain);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#closeCollectionModal {
+    /* position: absolute; */
+    width: 20px;
+    height: 20px;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 10;
+    color: white;
+}
+
+#collectModalTop {
+    /* width: 100%; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#collectModalTitle {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#collectOption {
+    width: calc(100% - 36px);
+    border-radius: 8px;
+    margin-left: 18px;
+    height: 80px;
+    background-color: #00ff0037;
+    background-color: var(--graySecond);
+    position: relative;
+    background-size: cover;
+}
+
+#collectOptionCover {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.431);
+    display: flex;
+    align-items: center;
+}
+
+#collectProfileImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 15px;
+    object-fit: cover;
+    border: solid 2px var(--graySecond);
+}
+
+#collectName {
+    margin-left: 10px;
+    color: white;
+    font-family: "font-2535";
+    font-size: 14px;
+    max-width: 160px;
+    word-wrap: break-word;
+}
+
+#collectBenefits {
+    width: calc(100% - 36px);
+    margin-left: 18px;
+}
+
+#collectBenefitsTitle {
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cBenefit {
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cBenefitIcon {
+    margin-right: 7px;
+}
+
+#collectMsg {
+    margin-top: 10px;
+    color: white;
+}
+
+#buyCollectBtn {
+    width: calc(100% - 36px);
+    margin-left: 18px;
+    height: 34px;
+    background-color: #00ff00;
+    border-radius: 4px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* bottom: 20px; */
+    font-family: 'Poppins', sans-serif;
+    z-index: 11;
+    font-size: 12px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+#collectCheckoutContainer {
+    width: calc(100% - 36px);
+    margin-left: 18px;
+    margin-top: -20px;
+    min-height: 400px;
+}
+
+@media only screen and (max-width: 515px) {
+    #collectModalOuter {
+        backdrop-filter: blur(5px);
+    }
+    #collectModalBody {
+        width: calc(100%);
+        position: fixed;
+        bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-bottom: 20px;
+    }
+}

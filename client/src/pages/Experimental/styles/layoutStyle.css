@@ -1,0 +1,20 @@
+#layoutOuter {
+    width: calc(100vw - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#layoutMain {
+    margin-left: 10px;
+    border-radius: 15px;
+    width: calc(100% - 350px);
+    height: 100%;
+    background-color: var(--grayMain);
+    overflow: scroll;
+    /* background-color: #121212; */
+}

@@ -1,0 +1,169 @@
+#competePanelArea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.competePanel {
+  position: relative;
+  width: 32%;
+  height: 93px;
+  background-color: var(--graySecond);
+  border-radius: 5px;
+  transition: all 0.4s ease-out;
+}
+
+.competeName {
+  padding-left: 15px;
+  padding-bottom: 0px;
+  text-transform: capitalize;
+  color: #bcbcbc;
+  color: white;
+  /* font-weight: bold; */
+}
+
+.competeDescription {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  padding: 20px;
+  padding-top: 65px;
+  text-align: left;
+  display: none;
+  color: #bcbcbc;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* .competePanel:hover {
+  cursor: pointer;
+  width: 35%; 
+  height: 350px;
+  padding-bottom: 10px;
+} */
+
+.competePanel {
+  cursor: pointer;
+  width: 32%;
+  height: 350px;
+  padding-bottom: 10px;
+}
+
+.competePanelTop {
+  transition: all 0.4s ease-out;
+  padding-left: 20px;
+  width: 282px;
+  height: 93px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+/* .competePanel:hover .competePanelTop {
+  top: 190px;
+} */
+
+.competePanelTop {
+  top: 190px;
+}
+
+.competeIcon {
+  width: 32px;
+  color: #00fc00
+}
+
+
+.competeImg {
+  /* background-image: url("https://t4.ftcdn.net/jpg/02/31/11/99/360_F_231119951_ApShyIjK1eZ6VLLWSDxGlwtEK7MXdXze.jpg"); */
+  background-size: cover;
+  background-color: transparent;
+  padding: 4px;
+  width: calc(100% - 8px);
+  height: 198px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.2s ease-in;
+}
+
+.competeImg {
+  display: initial;
+  opacity: 100%;
+}
+
+.competeDescription {
+  display: block;
+  opacity: 100%;
+}
+
+/* Responsive Media ======================================== */
+
+@media only screen and (max-width: 819px) {
+  #competePanelArea {
+    display: initial;
+  }
+
+  .competePanel {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .competePanel:hover {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+  }
+
+  .competeImg {
+    display: none;
+    opacity: 0%;
+  }
+
+  .competeDescription {
+    display: none;
+    opacity: 0%;
+  }
+
+  .competePanelTop {
+    top: 0px;
+  }
+
+  .competePanel {
+    height: 93px;
+  }
+
+  .competePanel:hover .competePanelTop {
+    top: 190px;
+  }
+
+  /* OPEN COMPONENT */
+
+  #open {
+    width: 100%;
+    height: 350px;
+  }
+
+  #open .competePanelTop {
+    top: 190px;
+  }
+
+  #open .competeImg {
+    display: initial;
+    opacity: 100%;
+  }
+
+  #open .competeDescription {
+    display: block;
+    opacity: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  #competePanelArea {
+    margin-top: 26px;
+  }
+
+}

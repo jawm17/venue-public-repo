@@ -1,0 +1,70 @@
+#supportersOuter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#supportersLabel {
+    color: var(--green);
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin-left: -10px;
+    font-weight: bold;
+
+    background-color: transparent;
+    background: -webkit-linear-gradient(13deg, rgb(0, 255, 0), rgb(0, 153, 255), rgb(255, 0, 157), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#supportersGrouping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    position: relative;
+}
+
+/* .supporter {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.supporter:hover {
+    border: solid 1px var(--green);
+} */
+
+#supporter4 {
+    z-index: 2;
+    border: solid 1px var(--green);
+}
+
+#supporterLabel {
+    position: absolute;
+    bottom: -45px;
+    left: 94px;
+    width: 110px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.gradientTextSmall {
+    font-family: "font-2535";
+    color: var(--green);
+    background-color: transparent;
+    margin-left: 5px;
+    font-size: 10px;
+}

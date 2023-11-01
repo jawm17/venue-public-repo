@@ -1,0 +1,90 @@
+#layoutSidebar {
+    width: 340px;
+    height: 100%;
+    /* border-radius: 15px;
+    background-color: var(--grayMain); */
+    /* background-color: #121212; */
+    color: white;
+}
+
+#sidebarTop {
+    /* border-radius: 15px;
+    background-color: var(--grayMain); */
+
+}
+
+#sidebarLogo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22.4px;
+    color: white;
+    cursor: pointer;
+    font-family: "font-2535";
+    width: 120px;
+    margin: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sidebarStars {
+    width: 30px;
+}
+
+#sidebarLogoText {
+    font-family: "font-2535";
+    margin-left: 15px;
+}
+
+#selectedNavBtn {
+    background-color: var(--grayMain);
+}
+
+.sidebarNavBtn {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: calc(100% - 30px);
+    border-radius: 4px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.sidebarNavBtn:hover {
+    background-color: var(--grayMain);
+}
+
+#sidebarNavIcon {
+    width: 28px;
+    margin-left: 10px;
+}
+
+.sidebarNavText {
+    margin-left: 10px;
+}
+
+#sidebarCollectionTitle {
+    font-family: "font-2535";
+    margin: 15px;
+    font-weight: 600;
+    font-size: 22.4px;
+    margin-bottom: 20px;
+}
+
+#sidebarCollectionArea {
+    width: calc(100% - 30px);
+    margin: 15px;
+    border-radius: 4px;
+    height: 400px;
+    /* background-color: var(--grayMain); */
+}
+
+.sidebarCollectionItem {
+    width: 100%;
+    height: 65px;
+    border-radius: 4px;
+    background-color: var(--grayMain);
+    margin-bottom: 10px;
+}

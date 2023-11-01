@@ -1,0 +1,230 @@
+#homeContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100% - 1px);
+}
+
+#homeRows {
+  margin-top: 8px;
+}
+
+.videoRowTitle {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-left: 2.5%;
+}
+
+.videoRowTitlePlaceHolder {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 32px;
+  margin-left: 2.5%;
+  width: 210px;
+}
+
+.homeVideoRowFlex {
+  /* margin-left: 5%; */
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.videoRow {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  width: 100vw;
+  scrollbar-width: none;
+  overflow: scroll;
+  white-space: nowrap;
+  margin-top: 0px;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: x mandatory; */
+  position: relative;
+
+  overflow-y: hidden;
+}
+
+.rowBtnBgLeft {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--green);
+  left: 36px;
+  top: calc(50% - 8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0;
+}
+
+.rowBtnBgRight {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--green);
+  right: 15px;
+  top: calc(50% - 8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.rowBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--grayMain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.rowBtn:active {
+  width: 36px;
+  height: 36px;
+}
+
+#homeSpacer {
+  height: 65px;
+}
+
+#showMoreBtn {
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  width: 93vw;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  margin-left: 3.5vw;
+  display: none;
+  position: relative;
+}
+
+#showMoreBtn:active #showMoreIcon {
+  margin-top: 5px;
+}
+
+#showMoreUsersBtn {
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  width: 93vw;
+  margin-top: 7px;
+  margin-bottom: 23px;
+  margin-left: 3.5vw;
+  display: none;
+  position: relative;
+}
+
+#showMoreUsersBtn:active #showMoreIconCircle #showMoreIcon .showMoreLine {
+  color: white;
+  border-color: white;
+}
+#showMoreUsersBtn:active #showMoreIcon {
+  color: white;
+  border-color: white;
+}
+#showMoreUsersBtn:active #showMoreIconCircle {
+  color: white;
+  border-color: white;
+}
+#showMoreUsersBtn:active .showMoreLine {
+  color: white;
+  border-color: white;
+}
+
+#showMoreUsersBtn:active #showMoreIcon {
+  margin-top: 5px;
+}
+
+.showMoreLine {
+  width: calc(50% - 15px);
+  border-bottom: solid 1px gray;
+}
+
+#showMoreIconCircle {
+  width: 30px;
+  height: 30px;
+  border: solid 1px gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showMoreIcon {
+  color: gray;
+  width: 20px;
+  height: 20px;
+}
+
+.vidRowFade {
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 57px;
+  /* background-color: red; */
+  width: 90px;
+  height: 240px;
+  background-image: linear-gradient(to right, rgba(243, 244, 245, 0), #14171a);
+}
+
+@media only screen and (max-width: 600px) {
+} 
+
+@media only screen and (max-width: 450px) {
+  .firstPreviewOuter {
+    padding-left: 0px;
+    width: calc(100% - 6px);
+  }
+  .previewOuter {
+    padding-left: 0px;
+    width: calc(100% - 6px);
+  }
+  .videoRow {
+    padding-top: 0px;
+    padding-bottom: 8px;
+    width: 95vw;
+    margin-left: 2.5vw;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px 20px;
+    margin-top: 20px;
+  }
+  .vidRowFade {
+    display: none;
+  }
+  .rowBtnBgLeft {
+    display: none;
+  }
+  .rowBtnBgRight {
+    display: none;
+  }
+  #showMoreBtn {
+    display: flex;
+  }
+  #showMoreUsersBtn {
+    display: flex;
+  }
+  .videoRow > .previewOuter:nth-child(n+4) {
+    display: none;
+  }
+
+  .videoRowTitle {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 2.5%;
+  }
+}

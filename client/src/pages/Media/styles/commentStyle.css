@@ -1,0 +1,154 @@
+#commentArea {
+    width: 100%;
+    height: 480px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+#commentsBlur {
+    border-radius: 4px;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    /* background-color: black; */
+    backdrop-filter: blur(4px);
+    /* border: solid 1px var(--green); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noComments {
+    text-align: center;
+    margin-top: 16px;
+    color: gray;
+}
+
+#commentTop {
+    position: absolute;
+    height: 416px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#commentInputFlex {
+    position: absolute;
+    bottom: -1px;
+    width: calc(100% + 2px);
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    background-color: black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#commentInputArea {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#postComment {
+    width: 96px;
+    height: 32px;
+
+    margin-left: 16px;
+    border: solid 0.8px var(--green);
+    cursor: pointer;
+    border-radius: 3.2px;
+    background-color:var(--green);
+
+    font-size: 11.2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#commentBarBg {
+    width: calc(100% - 96px);
+    height: 32px;
+    border-radius: 4.8px;
+    background-color: #14171A;
+    position: relative;
+    cursor: pointer;
+    border: solid 0.8px transparent;
+}
+
+#commentInput {
+    position: absolute;
+    top: 2.4px;
+    left: 8px;
+    resize: none;
+    height: 80%;
+    width: 98%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.comment {
+    min-height: 64px;
+    height: 64px;
+    border-bottom: solid 0.8px #5e5e5e;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 12.8px;
+}
+.commentPicFlex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 64px;
+    justify-content: center;
+}
+.commentUserPic {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: solid 0.8px var(--green);
+    cursor: pointer;
+    object-fit: cover;
+}
+.commentUsername {
+    font-weight: 600;
+    cursor: pointer;
+}
+.contentFlex {
+    position: absolute;
+    left: 64px;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.commentContentArea {
+    max-width: calc(88vw - 64px);
+}
+.commentContent {
+    overflow-wrap: break-word;
+}
+.heartFlex {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.commentHeart {
+    cursor: pointer;
+}

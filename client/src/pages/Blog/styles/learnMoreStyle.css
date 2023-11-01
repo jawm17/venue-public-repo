@@ -1,0 +1,46 @@
+#blogOuter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#blogInner {
+    width: 1000px;
+    height: 100%;
+    color: white;
+}
+
+#blogHeader {
+    margin-top: 40px;
+}
+
+#blogPostTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#blogPostContent {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 80px;
+}
+
+#blogPostContent2 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+.blogSection {
+    margin-bottom: 20px;
+}
+
+.blogSubHeading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}

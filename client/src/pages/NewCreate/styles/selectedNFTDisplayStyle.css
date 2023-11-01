@@ -1,0 +1,85 @@
+#selectedNFTArea {
+    padding-top: 80px;
+}
+
+.selectedNFT {
+    display: inline-block;
+    margin-right: 13px;
+    margin-bottom: 13px;
+
+    /* height: 180px; */
+    border-radius: 12px;
+    border: solid 2px transparent;
+    background-color: var(--grayMain);
+    width: calc(100% - 20px);
+}
+
+.selectedNFTFLex {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#unselectNFT {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.selectedNFTImg {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.selectedNFTInfo {
+    margin-left: 20px;
+    word-break: break-all;
+}
+
+#selectedContract {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nftLinkInputArea {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nftLinkLabel {
+    color: var(--green);
+}
+
+#nftLinkInputOuter {
+    width: calc(100% - 160px);
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px gray;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nftLinkInput {
+    margin-left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 8px);
+    background-color: transparent;
+    color: white;
+}
+
+#selectedBottomInfo {
+    color: rgb(187, 187, 187);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.displayNft:hover {
+    border: solid 2px var(--green);
+}

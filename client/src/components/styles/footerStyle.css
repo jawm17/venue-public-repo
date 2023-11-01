@@ -1,0 +1,21 @@
+#footerMain {
+    width: 100vw;
+    height: 45px;
+    background-color: var(--green);
+    /* background-color: rgb(59, 255, 59); */
+    /* background-color: #5DE900; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+}
+
+.footerEl {
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width: 550px) {
+    #footerMain {
+        margin-bottom: 65px;
+    }
+} */

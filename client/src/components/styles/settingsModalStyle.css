@@ -1,0 +1,90 @@
+#settingsOuter {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#settingsModal {
+    width: 520px;
+    height: 320px;
+    border-radius: 9.6px;
+    background-color: #1B1F21;
+    color: white;
+    position: relative;
+    border: solid 1.6px transparent;
+}
+
+#closeSettings {
+    position: absolute;
+    right: 5%;
+    top: 16px;
+    cursor: pointer;
+}
+
+#settingsTitle {
+    margin: 16px;
+    margin-left: 5%;
+    font-size: 14.4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#saveSettings {
+    width: 90%;
+    height: 33.6px;
+    margin-left: 5%;
+    background-color: var(--green);
+    border-radius: 4.8px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 11;
+    font-size: 12.8px;
+}
+
+#bioTitle {
+    font-size: 12.8px;
+}
+
+#editBioArea {
+    position: relative;
+    margin-top: 32px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#bioInputBg {
+    width: 100%;
+    height: 32px;
+    border-radius: 4.8px;
+    background-color: #14171A;
+    position: relative;
+    cursor: pointer;
+    border: solid 0.8px transparent;
+    margin-top: 5px;
+}
+
+#bioInput {
+    position: absolute;
+    top: 2.4px;
+    left: 4px;
+    height: 80%;
+    width: 98%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11.2px;
+}

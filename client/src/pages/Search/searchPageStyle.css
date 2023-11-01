@@ -1,0 +1,252 @@
+#searchPageArea {
+    /* margin-top: 90px; */
+    margin-top: 104px;
+}
+
+#searchTitle {
+    padding: 32px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#searchTerm {
+    color: var(--green);
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+}
+
+#searchTabsFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#searchTabs {
+    width: 95%;
+    border-bottom: solid 0.8px #5e5e5e;
+    height: 40px;
+}
+
+.searchTab {
+    position: absolute;
+    bottom: 1px;
+    color: rgb(155, 155, 155);
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 2px transparent;
+    cursor: pointer;
+    padding-bottom: 9.6px;
+}
+
+.selectedSearchTab {
+    position: absolute;
+    bottom: 1px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 2px var(--green);
+    padding-bottom: 9.6px;
+    color: var(--green);
+    cursor: pointer;
+}
+
+#videoTab {
+    left: 68px;
+}
+
+#userTab {
+    left: 160px;
+}
+
+#resultsFlex {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#resultsArea {
+    width: 95%;
+    display: grid;
+    column-gap: calc((95vw - 1216px) / 3);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 1300px) {
+    #resultsArea {
+        column-gap: calc((95vw - 912px) / 2);
+        grid-template-columns: auto auto auto;
+    }
+} 
+
+@media only screen and (max-width: 975px) {
+    #resultsArea {
+        column-gap: calc((95vw - 608px));
+        grid-template-columns: auto auto;
+    }
+} 
+
+@media only screen and (max-width: 650px) {
+    #resultsArea {
+        display: initial;
+    }
+    .resultGridBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+/* VideoSearchResult Style */
+.resultGridBox {
+    width: 100%;
+}
+
+.previewComponent {
+    width: 300px;
+    height: 216px;
+    border-radius: 8px;
+    border: solid 2px transparent;
+    background-color: #1B1F21;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.previewComponent:hover {
+   border-color: var(--green);
+}
+
+/* .previewImgDiv {
+    width: 100%;
+    height: 116.8px;
+    background-color: gray;
+    border-radius: 6px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+} */
+
+/* .previewImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: cover;
+} */
+
+/* .previewTitle {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 8px;
+    margin-left: 12px;
+}
+
+.previewUser {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.previewUserPic {
+    width: 22px;
+    height: 22px;
+    border: solid 2px var(--green);
+    background-color: gray;
+    border-radius: 50%;
+} */
+
+/* .previewUserName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 12px;
+    margin-left: 8px;
+} */
+
+/* UserSearchResult Style */
+
+.userResult {
+    width: 200px;
+    height: 144px;
+    border-radius: 6.4px;
+    border: solid 1.6px transparent;
+    background-color: #1B1F21;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.userResult:hover {
+    border-color: var(--green);
+}
+
+.userResultHero {
+    width: 100%;
+    height: 64px;
+    background-color: gray;
+    border-radius: 4.8px;
+    border-bottom-right-radius: 6.4px;
+    border-bottom-left-radius: 6.4px;
+    position: relative;
+}
+
+.userResultHeroImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4.8px;
+    border-bottom-right-radius: 6.4px;
+    border-bottom-left-radius: 6.4px;
+    object-fit: cover;
+}
+
+.userResultProfileImg {
+    position: absolute;
+    left: 80px;
+    bottom: -16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6.4px;
+    border: solid 1.6px #1B1F21;
+}
+
+.userResultName {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 11.2px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.userResultStats {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 11.2px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#mSearchBarArea {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    width: 100vw;
+    position: relative;
+    display: none;
+}
+
+#mSearchBarBg {
+    width: 95%;
+    height: 32px;
+    border-radius: 4.8px;
+    background-color: #14171A;
+    position: relative;
+    cursor: pointer;
+    border: solid 0.8px gray;
+}
+
+@media only screen and (max-width: 840px) {
+    #mSearchBarArea {
+        display: flex;
+    }
+} 

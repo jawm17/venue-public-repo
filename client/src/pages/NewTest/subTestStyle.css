@@ -1,0 +1,103 @@
+#subTestFlex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subTest {
+    width: 800px;
+    height: 400px;
+    border-radius: 12px;
+    /* border: solid 1px rgb(81, 81, 81); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subDivBg {
+    height: 80%;
+    width: 224px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://t4.ftcdn.net/jpg/02/31/11/99/360_F_231119951_ApShyIjK1eZ6VLLWSDxGlwtEK7MXdXze.jpg"); */
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.subDivBg:Hover {
+    background-position: 100px;
+}
+
+.subDiv {
+    width: 98%;
+    height: 98%;
+    background-color: var(--grayMain);
+    border-radius: 8px;
+    border: solid 1px rgb(81, 81, 81);
+}
+
+.orbFlex {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbImg {
+    width: 60%;
+}
+
+.tierTitle {
+    color: white;
+    font-family: "font-2537";
+    text-align: center;
+    margin-top: 18px;
+}
+
+.tierBtn {
+    width: 86%;
+    margin-left: 7%;
+    position: absolute;
+    bottom: 14px;
+    height: 40px;
+    border-radius: 4px;
+    /* background-color: black; */
+    /* border: solid 1px rgb(81, 81, 81); */
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIVj46ECIc-m5WHxbszV0H1hwZSb4b_F9U3xsJMJixxrRkO2hRRR5dvAcoIRBhE1n_8C4&usqp=CAU");
+    background-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(1)
+}
+
+.tierBtn:hover {
+    background-position-x: -10px;
+    background-position-y: -10px;
+}
+
+.tierBtnText {
+    color: black;
+    font-family: "font-2537";
+    /* background: -webkit-linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.tierSubTitle {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-family: "font-2531";
+}
+

@@ -1,0 +1,37 @@
+[
+    {
+        "username": "jack",
+        "amount": 10,
+        "rank": 1,
+        "title": "what you say",
+        "profileImg": "https://lledogrupo.com/wp-content/uploads/2018/04/white-img-300x202.jpg"
+    },
+    {
+        "username": "wendy",
+        "title": "what you say",
+
+        "amount": 9,
+        "profileImg": "https://www.meme-arsenal.com/memes/738ff7e55fffc9bd05f6307c341a550e.jpg"
+    },
+    {
+        "username": "earl",
+        "amount": 9.5,
+        "title": "what you say",
+
+        "profileImg": "https://wallpapercave.com/wp/wp6204784.jpg"
+    },
+    {
+        "username": "raven",
+        "amount": 8.32,
+        "title": "what you say",
+
+        "profileImg": "https://i.pinimg.com/474x/f4/84/95/f484956f4a80fc1b529c07d8097dcad5.jpg"
+    },
+    {
+        "username": "newt",
+        "amount": 6,
+        "title": "what you say",
+
+        "profileImg": "https://media.makeameme.org/created/dis-nigga-gay-5a9710.jpg"
+    }
+]

@@ -1,0 +1,123 @@
+#messagesBody {
+    width: 500px;
+    height: 80vh;
+    background-color: var(--grayMain);
+    border-radius: 12px;
+    padding: 25px;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+#messagesTitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+#messagesTop {
+    display: flex;
+    align-items: center;
+}
+
+#closeMessages {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+#messagesMenu {
+    width: 100%;
+    border-bottom: solid 0.8px #5e5e5e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.messagesMenuItem {
+    color: rgb(155, 155, 155);
+    width: 33%;
+    cursor: pointer;
+    padding-bottom: 9.6px;
+    border-bottom: solid 1.6px transparent;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* .menuItem1 {
+    text-align: start;
+}
+
+.menuItem2 {
+    text-align: center;
+}
+
+.menuItem3 {
+    text-align: end;
+} */
+
+#selectedMessagesMenuItem {
+    color: var(--green);
+    border-bottom: solid 1.6px var(--green);
+}
+
+.walletMenuTab {
+    color: var(--green);
+    color: rgb(155, 155, 155);
+    border-bottom: solid 1.6px transparent;
+    padding-bottom: 9.6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.selectedWalletTab {
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: solid 1.6px var(--green);
+    padding-bottom: 9.6px;
+}
+
+#messagesArea {
+    overflow: scroll;
+    height: calc(100% - 21px);
+    margin-top: 20px;
+    /* background-color: red; */
+}
+
+.notificationEl {
+    width: calc(100% - 1.6px);
+    height: 64px;
+    border-radius: 3.2px;
+    border: 0.8px solid #1B1F21;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 11.2px;
+    background-color: var(--graySecond);
+    cursor: pointer;
+    position: relative;
+}
+
+@media only screen and (max-width: 515px) {
+    #messagesBody {
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+        transform: none;
+        width: calc(100vw - 50px);
+        height: calc(100% - 50px);
+        border-radius: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+
+ 

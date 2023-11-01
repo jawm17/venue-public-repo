@@ -1,0 +1,537 @@
+#walletFlex {
+    /* width: 100vw;
+    display: flex;
+    justify-content: center; */
+}
+
+#walletArea {
+    /* max-width: var(--maxWidthMain); */
+    width: 95vw;
+    position: relative;
+    margin: auto;
+    padding-top: 110px;
+    /* padding-bottom: 100px; */
+    background-color: var(--grayMain);
+    /* overflow: hidden; */
+}
+
+#userHeroArea {
+    position: relative;
+    background-color: var(--graySecond);
+    width: 95vw;
+    height: 250px;
+    border-radius: 8px;
+}
+
+#walletUserImg {
+    width: 100px;
+    height: 100px;
+    border: solid 3px var(--grayMain);
+    background-color: var(--graySecond);
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    bottom: -50px;
+    left: 10px;
+}
+
+#accountImgLoader {
+    width: 100px;
+    height: 100px;
+    border: solid 3px var(--grayMain);
+    background-color: var(--graySecond);
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 6;
+    bottom: -50px;
+    left: 10px;
+}
+
+#walletUserHero {
+    /* max-width: var(--maxWidthMain); */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#walletUserInfoRow {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#walletStatsArea {
+    color: white;
+    text-align: right;
+    display: flex;
+}
+
+#walletStatsInner {
+    color: white;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.walletStat {
+    margin-left: 40px;
+}
+
+#walletEarnedAmount {
+    font-family: "font-2535";
+    color: var(--green);
+}
+
+#walletEarnedLabel {
+    color: gray;
+}
+
+#walletNameCollect {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#walletNameAdress {
+    margin-left: 120px;
+}
+
+#walletUserName {
+    color: white;
+    font-family: "font-2535";
+}
+
+#walletPageAddress {
+    color: gray;
+}
+
+#userBio {
+    max-width: 100%;
+    color: white;
+    margin-top: 30px;
+    word-wrap: break-word;
+    /* display: none; */
+}
+
+#smallStats {
+    margin-left: 15px;
+    font-size: 14px;
+    color: var(--green);
+    margin-top: 10px;
+    display: none;
+    align-items: center;
+}
+
+#smallStatsBreak {
+    color: var(--green);
+    background-color: transparent;
+    width: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#sendCollectBtns {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#collectBtn {
+    width: 110px;
+    height: 32px;
+    font-size: 12px;
+    /* border: solid 0.8px #363A3C; */
+    cursor: pointer;
+    border-radius: 3.2px;
+    background-color: var(--green);
+    /* margin-bottom: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    /* margin-top: 25px; */
+}
+
+#settingsBtn {
+    width: 110px;
+    height: 32px;
+    font-size: 12px;
+    /* border: solid 0.8px #363A3C; */
+    cursor: pointer;
+    border-radius: 3.2px;
+    background-color: #2b3136;
+    border: solid 1px #363A3C;
+    color: white;
+    /* margin-bottom: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sendBtn {
+    width: 35px;
+    height: 35px;
+    background-color: var(--graySecond);
+    color: var(--green);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#leftStuff {
+    float: left;
+    width: 40%;
+}
+
+#walletMenu {
+    width: 100%;
+    margin-top: 180px;
+    border-bottom: solid 0.8px #5e5e5e;
+    position: relative;
+    overflow: scroll;
+}
+
+#walletMenuTabs {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    /* width: 360px; */
+}
+
+#walletMenu::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.walletMenuTab {
+    color: var(--green);
+    color: rgb(155, 155, 155);
+    border-bottom: solid 1.6px transparent;
+    padding-bottom: 9.6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.selectedWalletTab {
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: solid 1.6px var(--green);
+    padding-bottom: 9.6px;
+}
+
+#profileMenuBtns {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--grayMain);
+    /* background-color: red; */
+    /* margin-top: 15px; */
+    margin-top: 25px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    /* margin-bottom: 15px; */
+}
+
+.profileMenuBtn {
+    width: calc(33% - 4px);
+    height: calc(100% - 4px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #00fc00;
+    font-size: 12px;
+    border-radius: 4px;
+    /* background-color: #111111; */
+}
+
+.profileMenuBtnIcon {
+    /* margin-left: 10px; */
+    margin-right: 5px;
+}
+
+#selectedMenuBtn {
+    background-color: #00ff0037;
+}
+
+#walletMenuProfile {
+    width: 100%;
+    margin-top: 180px;
+    border-bottom: solid 0.8px #5e5e5e;
+    position: relative;
+    overflow: scroll;
+}
+
+#walletMenuProfileTabs {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    max-width: 95vw;
+    /* width: 360px; */
+}
+
+#walletMenuProfile::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+#walletContent {
+    background-color: var(--grayMain);
+    padding-top: 10px;
+    width: 95vw;
+    position: relative;
+    margin: auto;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+    width: calc(100% - 16px);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+    width: calc(100% - 6px);
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
+}
+
+#gridPreview {
+    width: 100%;
+    padding-left: 0px;
+}
+
+#topPreviewComponentGrid {
+    margin-top: 0px;
+}
+
+#noCollectiblesMsg {
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#profileTxArea {
+    width: 95vw;
+    margin-left: 2.5vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contentGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px 20px;
+        width: calc(100% - 6px);
+        /* margin-top: 20px; */
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 864px) {
+    #walletArea {
+        padding-top: 70px;
+        width: 100vw;
+        /* padding-bottom: 10px; */
+        background-color: var(--graySecond);
+    }
+
+
+    #smallStats {
+        margin-left: 15px;
+        font-size: 14px;
+        color: var(--green);
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #sendBtn {
+        background-color: var(--grayMain);
+        margin-left: 0px;
+    }
+
+    #userBio {
+        max-width: 80%;
+    }
+
+    #walletMenuProfile {
+        /* display: none; */
+        margin-top: 40px;
+        margin-bottom: 0px;
+
+        padding-bottom: 0px;
+        width: 95vw;
+        margin-left: 2.5vw;
+    }
+
+    #walletMenuProfileTabs {
+        width: 250px;
+    }
+    
+
+    /* #profileMenuBtns {
+        display: flex;
+    } */
+
+    #walletUserImg {
+        left: calc(50% - 50px);
+        left: 10px;
+        width: 85px;
+        height: 85px;
+    }
+
+    #accountImgLoader {
+        left: calc(50% - 50px);
+    }
+
+    #walletUserInfoRow {
+        margin-top: 65px;
+        display: block;
+        text-align: center;
+    }
+
+    #walletNameCollect {
+        display: block;
+        margin-left: 15px;
+    }
+
+    #walletNameAdress {
+        margin: 0;
+        text-align: left;
+    }
+
+    #sendCollectBtns {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 200px;
+        right: 2.5vw;
+    }
+
+    #collectBtn {
+        width: 140px;
+    }
+
+    #settingsBtn {
+       width: 140px; 
+    }
+
+    #walletStatsArea {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+        display: none;
+    }
+
+    #walletStatsInner {
+        max-width: 600px;
+        width: 90vw;
+        justify-content: space-around;
+    }
+
+    .walletStat {
+        margin-left: 0px;
+        text-align: center;
+        min-width: 80px;
+    }
+
+    #leftStuff {
+        float: none;
+        text-align: center;
+        width: 100%;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    #userBio {
+        margin-top: 10px;
+    }
+
+    #supportersFlex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    #userHeroArea {
+        position: relative;
+        background-color: var(--graySecond);
+        width: 100%;
+        height: 120px;
+    }
+
+    #walletUserHero {
+        /* border-radius:12px; */
+        border-radius: 0px;
+        /* border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px; */
+    }
+
+    #walletMenu {
+        margin-top: 60px;
+    }
+
+    .contentGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 20px;
+        width: calc(100% - 6px);
+        /* margin-top: 20px; */
+        margin-bottom: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    #sendCollectBtns {
+        right: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contentGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px 20px;
+        width: calc(100% - 16px);
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-left: 5px;
+    }
+  
+}

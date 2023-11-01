@@ -1,0 +1,62 @@
+#headerCenter {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#promoPage {
+    overflow: hidden;
+}
+
+#promoTilesBg {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* position: fixed;
+    top: 0px;
+    left: 0px; */
+    /* transition: all 0.5s ease-in; */
+}
+
+.spanItem {
+    color: #060c0fa2;
+    font-family: "font-2535";
+    font-size: 22.4px;
+    word-spacing: -10px;
+    /* transition: margin 0.5s linear; */
+}
+
+.spanItemGreen {
+    color: var(--green);
+    font-family: "font-2535";
+    font-size: 22.4px;
+    word-spacing: -10px;
+}
+
+.spanItemWhite {
+    color: white;
+    font-family: "font-2535";
+    font-size: 22.4px;
+    word-spacing: -10px;
+}
+
+#promoBlock {
+    height: 200vh;
+}
+
+#testFeatures {
+    position: fixed;
+    display: none;
+    align-items: center;
+    top: 280px;
+    left: 340px;
+}
+
+.testFeat {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/229/317/original/rainbow-gradient-banner-free-vector.jpg");
+    background-size: 140%;
+    width: 300px;
+    height: 180px;
+    border-radius: 12px;
+    margin-right: 40px;
+}

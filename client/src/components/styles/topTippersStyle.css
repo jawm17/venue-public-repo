@@ -1,0 +1,101 @@
+#topTippers {
+    /* font-size: 22px; */
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: left;
+    /* display: none; */
+}
+
+#topTippersTitle {
+    color: var(--green);
+    color: white;
+    font-family: "font-2535";
+    font-size: 14px;
+    /* background-color: transparent;
+    background: -webkit-linear-gradient(13deg, rgb(0, 255, 0), rgb(0, 153, 255), rgb(255, 0, 157), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+#topTippersFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.tipper {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: -5px;
+    cursor: pointer;
+    background-color: var(--graySecond);
+    border: solid 1px transparent;
+    position: relative;
+}
+
+.tipper:hover {
+    border: solid 1px var(--green);
+}
+
+.tipper:hover .tipperInfo {
+    display: flex;
+}
+
+.tipperImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tipperInfo {
+    position: absolute;
+    bottom: -45px;
+    left: -20px;
+    /* width: 110px; */
+    height: 15px;
+    border-radius: 4px;
+    background-color: var(--graySecond);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    display: none;
+    white-space: nowrap;
+}
+
+#firstTipper {
+    left: 0px;
+}
+
+.tipperAmount {
+    font-family: "font-2535";
+    color: var(--green);
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 840px) {
+    .tipper {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        margin-left: -5px;
+        cursor: pointer;
+        background-color: var(--graySecond);
+        border: solid 1px transparent;
+        position: relative;
+    }
+    /* #topTippers {
+        text-align: center;
+    }
+
+    #topTippersFlex {
+        justify-content: center;
+        margin-left: 5px;
+    } */
+}

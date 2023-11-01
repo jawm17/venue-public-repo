@@ -1,0 +1,253 @@
+#mProfileBg {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grayMain);
+    background-color: var(--graySecond);
+    overflow: hidden;
+}
+
+#mProfileTop {
+    width: 100vw;
+    height: 330px;
+    /* position: fixed; */
+    background-color: var(--graySecond);
+    /* box-shadow: 0px 1px 2px 0px rgba(92, 92, 92, 0.2); */
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+#mProfileHero {
+    position: relative;
+    width: 100%;
+    height: 110px;
+}
+
+#mProfileHeroImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mEthEarned {
+    position: absolute;
+    color: white;
+    right: 10px;
+    font-size: 14px;
+    top: 15px;
+    /* width: 140px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mLastActive {
+    position: absolute;
+    color: white;
+    right: 10px;
+    font-size: 14px;
+    top: 60px;
+    /* width: 180px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mProfileTopInfo {
+    width: 100%;
+    height: calc(100% - 110px);
+    position: relative;
+}
+
+#mProfileImg {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: solid 3px   var(--graySecond);
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    object-fit: cover;
+}
+
+#mProfileNames {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+
+#mNameAndSend {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#mName {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+#mProfileAddress {
+    font-size: 18px;
+    color: white;
+}
+
+#mSupportersTitle {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    color: white;
+}
+
+#mSupportersFlex {
+    position: absolute;
+    top: 95px;
+    right: 15px;
+}
+
+.mSupporter {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: -4px;
+    border: solid 2px var(--green);
+    object-fit: cover;
+}
+
+/* #green {
+    border-color: var(--green);
+}
+
+#yellow {
+    border-color: red;
+}
+
+#purple {
+    border-color: rgb(215, 0, 215);
+} */
+
+#mSendBtn {
+    position: absolute;
+    top: 15px;
+    right: 175px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--grayMain);
+    color: var(--green);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mCollectBtn {
+    width:150px;
+    height: 40px;
+    background-color: var(--green);
+    color: var(--grayMain);
+    border-radius: 8px;
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+
+
+    font-weight: bold;
+    /* font-family: "font-2537"; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#masterMenuBtns {
+    width: 96%;
+    margin-left: 2%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--grayMain);
+    /* background-color: red; */
+    /* margin-top: 15px; */
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#mProfileContent {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    background-color: var(--graySecond);
+    background-color: var(--grayMain);
+    /* padding-top: 270px; */
+    padding-top: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+
+.mUnlockable {
+    width: calc(100vw - 20px);
+    height: 240px;
+    border-radius: 8px;
+    margin-left: 10px;
+    /* border: solid 1px var(--green); */
+    background-color: var(--graySecond);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.unlockableTop {
+    width: 100%;
+    height: 55px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.unlockableIcon {
+    background-color: rgba(95, 247, 95, 0.38);
+    color: rgb(0, 252, 0);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.unlockableThumbArea {
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.unlockableThumb {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "jack",
+        "solEarned": "40",
+        "rank": 1,
+        "title": "what you say",
+        "profilePic": "https://cryptopunks.app/cryptopunks/cryptopunk9998.png?customColor=638596"
+    },
+    {
+        "name": "amanda",
+        "title": "what you say",
+
+        "solEarned": "27.50",
+        "profilePic": "https://pbs.twimg.com/profile_images/1637872935347036161/PxFqWY4D_400x400.jpg"
+    },
+    {
+        "name": "earl",
+        "solEarned": "13",
+        "title": "what you say",
+
+        "profilePic": "https://wallpapercave.com/wp/wp6204784.jpg"
+    },
+    {
+        "name": "raven",
+        "solEarned": "53,330",
+        "title": "what you say",
+
+        "profilePic": "https://i.pinimg.com/474x/f4/84/95/f484956f4a80fc1b529c07d8097dcad5.jpg"
+    },
+    {
+        "name": "newt",
+        "solEarned": "7,999",
+        "title": "what you say",
+
+        "profilePic": "https://media.makeameme.org/created/dis-nigga-gay-5a9710.jpg"
+    },
+    {
+        "name": "bronson",
+        "solEarned": "7,677",
+        "title": "what you say",
+
+        "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQthHVYX7uaGAQbJifvkv4GskIjvp14b9KIAQ&usqp=CAU"
+    },
+    {
+        "name": "amy",
+        "solEarned": "5,234",
+        "title": "what you say",
+
+        "profilePic": "https://1.bp.blogspot.com/-qES8XCPCoMs/YPenPwxubUI/AAAAAAAAFdg/txOuXwSLWGQLT-QGAh98a-8m26UjMU9XQCLcBGAsYHQ/w1600/20210721_101605.jpg"
+    },
+    {
+        "name": "pearl",
+        "solEarned": "5,233",
+        "title": "what you say",
+
+        "profilePic": "https://sm.pcmag.com/pcmag_me/news/t/twitter-bl/twitter-blue-tests-nft-profile-pics_1sfd.jpg"
+    },
+    {
+        "name": "pearl",
+        "solEarned": 4.22,
+        "title": "what you say",
+
+        "profilePic": "https://sm.pcmag.com/pcmag_me/news/t/twitter-bl/twitter-blue-tests-nft-profile-pics_1sfd.jpg"
+    },
+    {
+        "name": "raleigh",
+        "solEarned": 3.2,
+        "title": "what you say",
+
+        "profilePic": "https://images.unsplash.com/photo-1608155686393-8fdd966d784d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JlYXRpdmUlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    }
+]

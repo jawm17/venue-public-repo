@@ -1,0 +1,151 @@
+.collectionItem {
+    width: calc(100% - 11.6px);
+    margin-left: 5px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 3.2px;
+    border: 0.8px solid #1B1F21;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 11.2px;
+    background-color: var(--graySecond);
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+}
+
+.collectionItem:hover {
+    border-color:#5e5e5e;
+}
+
+.collectionItemTop {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+}
+
+.collectionItemImg {
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.nftLevelBadge {
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.533);
+    /* background-color: rgba(0, 110, 255, 0.533); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.nftBadgeIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+#gold {
+    background-color: rgb(255, 231, 49);
+    color: black;
+}
+
+#goldIcon {
+    margin-bottom: 5px;
+    filter: invert(1);
+}
+
+#diamond {
+     background-color: rgba(0, 110, 255, 0.533);
+}
+
+
+
+.collectionInfoArea {
+    opacity: 0;
+    width: 100%;
+    height: 216px;
+    margin-top: 64px;
+    transition: all 0.2s ease-in;
+}
+
+.collectionInfoBg {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: 150px;
+    overflow: hidden;
+    background-color: var(--grayMain);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.collectionImgMain {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.collectionInfo {
+    margin-left: 20px;
+}
+
+#collectionName {
+    font-family: "font-2535";
+}
+
+.collectionText {
+    margin-bottom: 10px;
+}
+
+.benefitsArea {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.collectionBenefit {
+    background-color: rgba(0, 255, 0, 0.38);
+    color: rgb(0, 252, 0);
+    padding: 7px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.benefitLabel {
+    margin-right: 10px;
+}
+
+#sellNftBtn {
+    position: absolute;
+    right: 0px;
+    bottom: -46px;
+    background-color: #363A3C;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

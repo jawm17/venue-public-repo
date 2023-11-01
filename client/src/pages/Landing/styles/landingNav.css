@@ -1,0 +1,93 @@
+/* Header Stuff ================================================= */
+#headerFlexL {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#headerOuterL {
+  width: 90vw;
+  max-width: var(--maxWidthMain);
+  position: fixed;
+  top: 0px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+/* @media only screen and (max-width: 1200px) {
+    #headerOuterL {
+      left: 5vw;
+    }
+  } */
+
+#logoFlexL {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#logoIconL {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+
+}
+
+#logoStarsL {
+  width: 32px;
+}
+
+#logoTextL {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25.6px;
+  margin-left: 16px;
+  color: rgb(233, 233, 233);
+  cursor: pointer;
+  font-family: "font-2535";
+}
+
+#landingMenuFlex {
+  /* width: 375px; */
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landingMenuItem {
+  color: rgb(233, 233, 233);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.landingMenuItem:hover {
+  color: rgb(255, 255, 255);
+}
+
+#landingHeaderBtn {
+  width: 100px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  font-size: 12px;
+
+  border: solid 1px #363a3c;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#landingHeaderBtn:hover {
+  background-color: rgb(88, 244, 88);
+}
+
+#landingHeaderBtn:active {
+  border-color: var(--green);
+}

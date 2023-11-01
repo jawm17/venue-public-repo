@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "font-2535";
+  font-display: block;
+  src: url("./RapidST_BlackExtended.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+#landingBody {
+  max-width: var(--maxWidthMain);
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+.landingSections {
+  padding-top: 120px;
+  /* padding-bottom: 120px; */
+  position: relative;
+}
+
+.LsectionTitle {
+  padding-bottom: 10px;
+  font-size: 45px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "font-2535";
+  color: var(--headerText);
+}
+
+.LsectionSubtilte {
+  padding-bottom: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--grayText);
+}
+
+#landingBody h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--headerText);
+  padding-bottom: 5px;
+}
+
+#landingBody p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 148%;
+  color: var(--grayText);
+}
+
+@media only screen and (max-width: 860px) {
+  .LsectionTitle {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .LsectionTitle {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .landingSections {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  #landingBody h3 {
+    text-align: center;
+  }
+
+  #landingBody p,
+  li {
+    text-align: center;
+  }
+}
+
+/* ================================================= */
+/* Gid Divs */
+/* ================================================= */
+.landingGridDivs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-bottom: 85px;
+}
+
+.landingGridDivs>div {
+  min-height: 300px;
+  flex: max(400px, 100%/2 - 200px);
+}
+
+.landingGridDivs video,
+.landingGridDivs img,
+#fundBg,
+#techImg1 {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.landingGridInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landingGridDivs {
+    gap: 25px;
+  }
+
+  .landingGridDivs>div {
+    min-height: 200px;
+  }
+
+  .landingGridInfo h3 {
+    padding-bottom: 10px;
+  }
+}
+
+/* ================================================= */
+/* HERO */
+/* ================================================= */
+#landingHeroBg {
+  z-index: -1;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-image: url("../../../assets/cartographer.png");
+  background-color: black;
+}
+
+#landingHero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+#heroFlex {
+  width: 100%;
+  height: 100%;
+  /* margin-top: 180px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  position: relative;
+}
+
+#heroTextFlex {
+  width: calc(100% - 600px);
+}
+
+#heroTextArea {
+  width: 100%;
+}
+
+#heroTitle {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  font-weight: 600;
+  font-size: 45px;
+  /* color: var(--green); */
+  color: white;
+  font-family: "Gilroy-Bold";
+  font-family: "font-2535";
+  padding-bottom: 10px;
+}
+
+#greenText {
+  font-family: 'Poppins', sans-serif;
+  width: 105%;
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--green);
+  font-family: "Gilroy-Bold";
+  font-family: "font-2535";
+  padding-bottom: 10px;
+}
+
+#heroSubTitle {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--grayText);
+}
+
+#heroBtn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--green);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  /* min-width: 250px; */
+  max-width: 80%;
+}
+
+#heroBtnText {
+  margin-left: 18px;
+}
+
+#heroBtnIcon {
+  margin-right: 12px;
+}
+
+#heroVidFlex {
+  width: 600px;
+}
+
+.heroVidBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  position: relative;
+}
+
+#heroVidBg1 {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(28, 34, 42, 0.8);
+}
+
+#heroPlayIcon {
+  width: 65px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#heroVid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  #heroTitle {
+    font-size: 28px;
+  }
+
+  #greenText {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  #landingHero {
+    height: initial;
+  }
+  #heroFlex {
+    display: initial;
+    margin-top: 180px;
+  }
+  #heroBtn {
+    max-width: 100%;
+  }
+  #heroTextFlex {
+    width: calc(100%);
+  }
+  #heroVidFlex {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  #heroVidBg1 {
+    width: 100%;
+    height: 225px;
+    background-color: rgb(28, 34, 42, 0.8);
+  }
+  
+}
+
+/* ================================================= */
+/* FEATURSES */
+/* ================================================= */
+
+#featuresContainer .landingGridDivs {
+  margin-bottom: 75px;
+}
+
+#framerDiv {
+  width: 5px;
+  height: 25%;
+  background-color: #00f260;
+}
+
+#fundBg {
+  background: url(https://imgs.search.brave.com/sMzZHHCLCRyyO_LgptIl1nWsEq2vYdCPWmUPuS3T3ZQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9kMzFz/eGw2cWduZTJ5ai5j/bG91ZGZyb250Lm5l/dC93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAw/NDA2MTU0NTUwL1Nv/ZnQtUmFpbmJvdy1H/cmFkaWVudC10aHVt/Yi5qcGc);
+}
+
+#fundBg video {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  margin: 30px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #featuresContainer h1 {}
+
+  #featuresContainer h2 {
+    padding-bottom: 40px;
+  }
+
+  #featuresContainer .landingGridDivs {
+    margin-bottom: 50px;
+  }
+
+  #flip {
+    flex-direction: column-reverse;
+  }
+
+  #framerDiv {
+    display: none;
+  }
+
+  #fundBg video {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin: 25px;
+  }
+}
+
+/* ================================================= */
+/* Compete for the best  */
+/* ================================================= */
+#landingTheBest h1 {
+  margin: auto;
+  width: 90%;
+  padding-bottom: 75px;
+}
+
+#landingTheBest mark {
+  font-family: "font-2535";
+  color: var(--green);
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  #landingTheBest h1 {
+    width: 95%;
+  }
+}
+
+/* ================================================= */
+/* Unlock  Future*/
+/* ================================================= */
+#unlockFuture h2 {
+  margin-bottom: 175px;
+}
+
+#unlockFutureContent {
+  margin-top: 180px;
+}
+
+#unlockFuture .landingGridDivs {
+  margin-bottom: 150px;
+}
+
+#unlockFuture .landingGridInfo {
+  text-align: center;
+  width: 100%;
+}
+
+#unlockFuture .landingGridInfo p {
+  margin: auto;
+  width: 100%;
+  display: none;
+  color: red;
+}
+
+#techImg1 {
+  background-color: rgb(28, 30, 35);
+}
+
+#techImg1 img {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: calc(100% - 200px);
+  border-radius: 15px;
+}
+
+.stepNumbersDiv1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -125px;
+  margin-left: auto;
+  margin-right: auto;
+  height: calc(100% + 75px);
+}
+
+.stepNumbersDiv1 h5 {
+  height: 40px;
+  width: 40px;
+  background-color: var(--green);
+  color: black;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepNumbersDiv1 p {
+  color: var(--green);
+  margin: auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.stepLines {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 125px;
+  bottom: 0;
+  margin: auto;
+  width: 2px;
+  height: calc(100% - 50px);
+  background: linear-gradient(to top,
+      #6a82fb00,
+      var(--green),
+      var(--green),
+      #6a82fb00);
+}
+
+#thirdLine {
+  top: 400px;
+  height: 170%;
+}
+
+/* step Line end */
+@media only screen and (max-width: 1200px) {
+  #unlockFuture h2 {
+    margin-bottom: 200px;
+  }
+
+  #unlockFuture .landingGridDivs {
+    margin-bottom: 150px;
+  }
+
+  #techImg1 img {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
+  }
+
+  .stepNumbersDiv1 {
+    top: -100px;
+  }
+
+  .stepLines {
+    display: none;
+  }
+}

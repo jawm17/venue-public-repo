@@ -1,0 +1,101 @@
+#testEquity {
+    width: 900px;
+    height: 300px;
+    border-radius: 12px;
+    border: solid 1px rgb(81, 81, 81);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tubeData {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+#tubeTitle {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tubeSubTitle {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundingTube {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px rgb(81, 81, 81);
+}
+
+#fillCurve {
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: -1px;
+    top: -1px;
+    background-color: blue;
+    height: 100%;
+    width: 20px;
+    z-index: 4;
+    border: solid 1px rgb(81, 81, 81);
+    border-right: none;
+    display: none;
+}
+
+#ethLogo {
+    width: 20px;
+    margin-left: 5px;
+    padding-bottom: 1px;
+}
+
+#fundingFill {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: rgb(95,247,95);
+    background: linear-gradient(180deg, rgba(95,247,95,1) 0%, rgba(21,163,21,1) 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 0px;
+    transform-origin: left;
+    /* transform: scale(2,1); */
+    transition: all 0.4s ease-out;
+    z-index: 0;
+}
+
+#fillCover {
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background-color: var(--grayMain);
+    left: -200px;
+    z-index: 2;
+    transition: all 0.4s ease-out;
+    display: none;
+}
+
+/* 
+#fillTop {
+    position: absolute;
+    right: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: red;
+    height: 100%;
+    width: 20px;
+} */

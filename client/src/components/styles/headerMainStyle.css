@@ -1,0 +1,421 @@
+#loaderLine {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+#headerFlag0 {
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--green);
+    bottom: -20px;
+    left: 40px;
+    cursor: pointer;
+}
+
+#headerFlag {
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--blue);
+    bottom: -20px;
+    left: 90px;
+    cursor: pointer;
+}
+
+#headerFlag2 {
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: red;
+    bottom: -20px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.nanobar {
+    width: 100%;
+    height: 2px;
+    z-index: 9999;
+    top: 0;
+}
+
+.bar {
+    width: 0;
+    height: 100%;
+    transition: height .3s;
+    background: var(--green);
+}
+
+#notificationsIcon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    top: -5px;
+    right: -5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#headerOuter {
+    width: 100vw;
+    height: 82px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* border-bottom: solid 0.2px #5e5e5e; */
+    background-color: var(--graySecond);
+    /* border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    backdrop-filter: blur(18px); */
+    top: 0px;
+    z-index: 10000;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+#logoFlex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logoStars {
+    margin-left: 2.5vw;
+    width: 32px;
+}
+
+#logoText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22.4px;
+    margin-left: 16px;
+    color: white;
+    cursor: pointer;
+    font-family: "font-2535";
+    width: 120px;
+}
+
+/* HeaderBtns =================================================================== */
+#headerBtnsRight {
+    height: 100%;
+    right: 22px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+#profileBtnBorder {
+    /* width: 180px; */
+    min-width: 120px;
+    padding-left: 20px;
+    height: 40px;
+    background-color: var(--graySecond);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 30px;
+    margin-left: 20px;
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+    /* background-color: #2b3136; */
+    background-color: #2b3136;
+}
+
+#profileBtnBorder:hover {
+    border-color: rgb(67, 175, 67);
+}
+
+#profileBtn {
+    width: 32px;
+    height: 32px;
+    /* width: 100%;
+    height: 100%; */
+    background-color: gray;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 3px;
+    /* margin-left: 10px; */
+}
+
+#profileBtnNew {
+    background-color: var(--green);
+    color: black;
+    position: relative;
+}
+
+#profileBtnNew .headerBtnText {
+    color: black;
+    /* margin-left: 20px;
+    margin-right: 10px; */
+}
+
+#profileBtnNew .headerIcon {
+    color: black;
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    /* width: 19.2px;
+    height: 19.2px; */
+}
+
+#profileBtnImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: none;
+}
+
+.headerBtn {
+    border: solid 1px #363A3C;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 88px;
+    height: 32px;
+    font-size: 4px;
+    background-color: #363A3C;
+    padding-left: 10px;
+    /* padding-right: 20px; */
+}
+
+.headerBtn:active {
+    border-color: var(--green);
+}
+
+.headerBtnText {
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
+}
+
+.headerIcon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+#connectBtnText {
+    color: black;
+}
+
+#cardBtn {
+    color: black;
+    background-color: var(--green);
+}
+
+#cardIcon {
+    /* width: 19.2px;
+    height: 19.2px; */
+    color: black;
+}
+
+#cardBtn .headerBtnText {
+    color: black;
+}
+
+#connectBtn {
+    border: solid 1px #363A3C;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98px;
+    height: 32px;
+    font-size: 4px;
+    background-color: var(--green);
+    font-size: 12px;
+    color: black;
+    /* padding: 0px; */
+}
+
+/* #connectBtntext {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9.6px;
+    margin-left: 0px;
+} */
+
+#connectBtnIcon {
+    display: none;
+}
+
+#headerSearchBtn {
+    display: none;
+}
+
+.headerCircleBtn {
+    border: solid 1px #363A3C;
+    background-color: #2b3136;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.headerCircleBtn:active {
+    border-color: var(--green);
+}
+
+.createStarsBtn {
+    width: 48px;
+    height: 48px;
+}
+
+#createStars {
+    width: 25px;
+}
+
+#sortTab {
+    position: absolute;
+    bottom: -23px;
+    right: 25px;
+    width: 80px;
+    height: 22px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+#mobileHeaderBtnsRight {
+    display: none;
+}
+
+/* Responsiveness ============================================================= */
+@media only screen and (max-width: 900px) {
+    #headerSearchBtn {
+        display: flex;
+    }
+    .headerBtnText {
+        display: none;
+    }
+    .headerBtn {
+        border: solid 1px #363A3C;
+        background-color: #2b3136;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding: 0px;
+    }
+    #profileBtnImg {
+        display: block;
+    }
+}
+@media only screen and (max-width: 864px) {
+    #headerOuter {
+        height: 72px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #logoStars {
+        width: 28px;
+        margin-left: 12px;
+    }
+    #logoText {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 20.4px;
+        margin-left: 10px;
+        color: white;
+        cursor: pointer;
+        font-family: "font-2535";
+    }
+    #headerBtnsRight {
+        right: 12px;
+    }
+    #profileBtnInfo {
+        display: none;
+    }
+    #profileBtnBorder {
+        min-width: 33px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        justify-content: center;
+        padding-left: 0px;
+        margin-left: 10px;
+    }
+    #profileBtn {
+        margin: 0;
+    }
+    .headerCircleBtn {
+        margin-left: 10px;
+    }
+    /* #menuBottom {
+        display: flex;
+    } */
+    #leaderboardBtn {
+        display: none;
+    }
+    #headerBtnsRight {}
+}
+@media only screen and (max-width: 550px) {
+    #headerBtnsRight {
+        display: none;
+    }
+    #mobileHeaderBtnsRight {
+        display: initial;
+        position: absolute;
+        right: 12px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #logoStars {
+        width: 26px;
+    }
+    #logoText {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+    /* #connectBtn {
+        width: 87px;
+        margin-left: 15px;
+    } */
+    #headerBtnsRight {
+        height: 100%;
+        right: 12px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #homeBtn {
+        display: none;
+    }
+}

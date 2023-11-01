@@ -1,0 +1,236 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  background-color: var(--grayMain);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+div::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Change the input white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#networkAlertArea {
+  z-index: 50002;
+  position: fixed;
+  bottom: 25px;
+  /* right: 25px; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#alert {
+  padding: 20px;
+  padding-top: 10px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: solid 1px var(--green);
+  background-color: var(--graySecond);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 450px) {
+  #networkAlertArea {
+    z-index: 50002;
+    position: fixed;
+    bottom: 65px;
+    /* right: 25px; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  #alert {
+    width: 50%;
+  }
+}
+
+/* ======================== */
+/* globle vars */
+/* ======================== */
+:root {
+  /* COLORS */
+  --green: #00fc00;
+  --blue: #0b83ff;
+  --grayMain: #14171a;
+  /*   --grayMain: #1d252f; */
+  /*   --graySecond: #27303d; */
+  /* blue theme */
+  /* --grayMain: #000D26;
+  --graySecond: #041938; */
+  /* #14171a */
+  /* #0d0f10 */
+  /* #131618 */
+  --graySecond: #1a1e21;
+  --grayThird: #363A3C;
+  /* rgb(28, 34, 42) */
+  --maxWidthMain: 1200px;
+  --headerText: white;
+  --grayText: #bcbcbc;
+
+  /* FONT SIZE */
+
+}

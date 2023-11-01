@@ -1,0 +1,126 @@
+/* .walletCard {
+    width: 100%;
+    height: 64px;
+    border-radius: 3.2px;
+    border: 0.8px solid #1B1F21;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 11.2px;
+    background-color: var(--graySecond);
+    cursor: pointer;
+    position: relative;
+}
+
+.walletCard:hover {
+    border-color:#5e5e5e;
+}
+
+.walletCardImageName {
+    display: flex;
+    align-items: center;
+}
+
+.walletCardImage {
+    width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+
+.walletCardName {
+    margin-left: 20px;
+}
+
+.walletCardBalance {
+    margin-right: 20px;
+} */
+
+.walletCard {
+    width: 280px;
+    height: 230px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--graySecond);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    /* margin-right: 4px; */
+}
+
+.walletCardInner {
+    position: absolute;
+    width: calc(100% - 16px);
+    height: 100%;
+}
+
+.walletCardBlock {
+    display: inline-block;
+}
+
+.walletCardImage {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.walletCardName {
+    font-family: "font-2535";
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    /* color: var(--green); */
+    margin-left: 5px;
+}
+
+.walletCardBalance {
+    color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.walletCardPrompt {
+    width: 276px;
+    height: 226px;
+    border-radius: 8px;
+    background-color: var(--grayMain);
+    margin-top: 20px;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-right: 4px;
+    border: solid 2px rgb(47, 47, 47);
+}
+
+.walletCardPrompt:hover {
+    cursor: pointer;
+    border-color: var(--green);
+}
+
+.walletCardPrompt:hover .walletCardPromptInner  {
+    cursor: pointer;
+    color: var(--green);
+}
+
+
+.walletCardPromptInner {
+    position: absolute;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.cardIconFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}

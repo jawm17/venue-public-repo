@@ -1,0 +1,12 @@
+#bottomNavBlock {
+    width: 100%;
+    height: 65px;
+    background-color: transparent;
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    #bottomNavBlock {
+        display: block;
+    }
+}
