@@ -15,7 +15,7 @@ const polygonRPC = "https://polygon-mainnet.g.alchemy.com/v2/w1jm8yaxFLd3sjA_Rbd
 const polygonAlchemyApiKey = "w1jm8yaxFLd3sjA_RbdRDujeWzUEwoSO";
 
 // const network = config.NODE_ENV == "development" ? "mumbai" : "polygon";
-const network = "mumbai";
+const network = "polygon";
 const cardAddress = network == "mumbai" ? mumbaiCardAddress : polygonCardAddress;
 const cardAbi = network == "mumbai" ? mumbaiCardAbi : polygonCardAbi;
 const paperCardId = network == "mumbai" ? mumbaiPaperCardId : polygonPaperCardId; 
