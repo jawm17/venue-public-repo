@@ -9,7 +9,8 @@ Our React frontend codebase can be found in the [client folder](/client) above.
 ## Backend Architecture
 
 We use an Express server, Node, and MongoDB to listen to, interact with, and store data on the Polygon Proof of Stake blockchain. 
-<br /> Inside of the `contracts` [folder](/contracts) we have the [USDC Deposit Contract](/contracts/USDCDeposit.sol). This is a basic contract written in solidity that allows us to integrate with our onramp payment partner, ThirdWeb. We also have the [Collect Contract](/contracts/Collect.sol) which is used to provide creators with an nft membership token referred to as a "Collectible". This contract includes a tier based royalty sharing system that is used for users on our site to invest in creators.  
+<br /> Inside of the `contracts` [folder](/contracts) we have the [USDC Deposit Contract](/contracts/USDCDeposit.sol). This is a basic contract written in solidity that allows us to integrate with our onramp payment partner, ThirdWeb. 
+<br /> We also have the [Collect Contract](/contracts/Collect.sol) which is used to provide creators with an nft membership token referred to as a "Collectible". This contract includes a tier based royalty sharing system that is used for users on our site to invest in creators.  
 
 ## Future Development and Considerations
 
