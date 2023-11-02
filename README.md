@@ -4,7 +4,7 @@ venue is a multi-media monetization platform. [venue.market](https://venue.marke
 
 ## Frontend Architecture 
 
-Our React frontend codebase can be found in the [client folder](/client) above. 
+Our React frontend codebase can be found in the client [folder](/client) above. 
 
 ## Backend Architecture
 
