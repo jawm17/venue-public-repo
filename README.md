@@ -1,18 +1,15 @@
 ## about venue
 
-venue is a multi-media monetization platform. [venue.market](https://venue.market) allows creators to place their videos behind paywalls and recieve tips for their work. Payments are made possible by the Polygon blockchain.
+venue is a multi-media monetization platform. [venue.market](https://venue.market) allows creators to place their videos behind paywalls and recieve tips for their work. Payments are made through the Polygon blockchain.
 
-## installation
+## frontend architecture 
 
-* Install and use node v12.16.1
-```
-nvm install v12.16.1
-nvm use v12.16.1    
-```
-* Install the NPM dependencies and start the dev server:
-```
-npm install && npm run start:dev
-```
+Our React frontend codebase can be found in [the top level client folder](/client) above. 
+
+## backend architecture
+
+
+
 
 ## feedback and support
 
