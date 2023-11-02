@@ -1,6 +1,6 @@
-# About Venue
+# About venue
 
-Venue is a multi-media monetization platform. [venue.market](https://venue.market) allows creators to place their videos behind paywalls and receive tips for their work. Payments are made through the Polygon blockchain.
+venue is a multi-media monetization platform. [venue.market](https://venue.market) allows creators to place their videos behind paywalls and receive tips for their work. Payments are made through the Polygon blockchain.
 
 ## Frontend Architecture 
 
